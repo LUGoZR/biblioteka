@@ -1,0 +1,152 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto Bold';
+    src: url('fonts/Roboto-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url('fonts/Roboto-Medium.ttf');
+}
+
+.root {
+    /* Creating color palette */
+    -swatch-100: #c5cae9;
+    -swatch-200: #9fa8da;
+    -swatch-300: #7986cb;
+    -swatch-400: #5c6bc0;
+    -swatch-500: #3f51b5;
+    -swatch-600: #3949ab;
+    -swatch-700: #303f9f;
+    -swatch-800: #283593;
+    -swatch-900: #1a237e;
+    -swatch-accent: #e91e63;
+    -swatch-dark: #5E5E5E;
+    -swatch-grey: #777777; /*#757575;*/
+    -swatch-dark-grey: #202020;
+    -swatch-light-grey: rgb(230.0, 230.0, 230.0);
+    -fx-primary-text-color: white;
+    -fx-secondary-text-color: #2F3235;
+    -fx-text-base-color: rgb(0.0, 0.0, 0.0);
+    -fx-text-button-normal: -swatch-500;
+    -fx-text-button-colored: rgb(255.0, 255.0, 255.0);
+    -fx-text-button-text: rgb(100.0, 100.0, 100.0);
+    -fx-text-title-color: rgb(45.0, 45.0, 45.0);
+    -fx-text-subtitle-color: rgb(65.0, 65.0, 65.0);
+    -fx-text-control-title-color: rgb(130.0, 130.0, 130.0);
+    -fx-text-fill: -fx-text-base-color;
+    -fx-background-color: #EEEEEE;
+    -fx-text-button-colored: rgb(255.0, 255.0, 255.0);
+    -fx-text-button-text: rgb(100.0, 100.0, 100.0);
+    -fx-text-title-color: rgb(45.0, 45.0, 45.0);
+    -fx-text-subtitle-color: rgb(65.0, 65.0, 65.0);
+    -fx-text-control-title-color: rgb(130.0, 130.0, 130.0);
+    -fx-text-fill: -fx-text-base-color;
+    -fx-font-family: "Roboto";
+    -swatch-dark-grey: #202020;
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * Navigation Drawer				 				          				   *
+ *                                                                             *
+ ******************************************************************************/
+.navigation-drawer {
+    -fx-background-color: transparent;
+    -fx-background-radius: 0;
+    -fx-border-width: 0;
+    -fx-border-color: transparent;
+    -fx-focus-color: transparent;
+}
+
+.navigation-item-title {
+    -fx-fill: -swatch-dark;
+    -fx-font-family: "Roboto Medium";
+    -fx-font-size: 11pt;
+}
+
+.navigation-item-description {
+    -fx-fill: -swatch-grey;
+    -fx-font-family: "Roboto Medium";
+    -fx-font-size: 9pt;
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * Tool bar	& Menu bar & Dialog                    			  				   *
+ *                                                                             *
+ ******************************************************************************/
+.tool-bar, .menu-bar { /* top */
+    -fx-background-color: -swatch-500;
+    -fx-border-width: 0 0 0 0;
+    -fx-border-color: transparent;
+    -fx-padding: 1;
+    /*-fx-effect: dropshadow(three-pass-box, rgba(20, 20, 20, 0.8), 15, 0, 0, 5);*/
+    -fx-effect: dropshadow(gaussian, rgba(20, 20, 20, 0.8), 15, 0, 0, 3);
+}
+
+.tool-bar .label {
+    -fx-font-size: 18;
+    -fx-font-family: "Roboto";
+}
+
+.tool-bar .text {
+    -fx-fill: white;
+    -fx-font-family: "Roboto";
+}
+
+.tool-bar .combo-box-base, .menu-bar .combo-base {
+    -fx-border-width: 0;
+}
+
+/*.tool-bar .button,*/
+.tool-bar .toggle-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: -fx-text-base-color;
+    -fx-font-size: 12pt;
+    -fx-background-radius: 0;
+    -fx-font-family: "Roboto";
+}
+
+.tool-bar .text-field {
+    -fx-text-fill: white;
+    -fx-border-color: #DDD;
+    -fx-prompt-text-fill: #DDD;
+}
+
+.tool-bar .text-field:focused {
+    -fx-border-color: white;
+}
+
+.tool-bar .toggle-button {
+    -fx-background-color: -swatch-500;
+}
+
+.toolbar-tab {
+    -fx-background-color: -swatch-500;
+    -fx-background-radius: 0;
+    -fx-border-width: 0 0 3 0;
+    -fx-background-padding: 0 25 0 25;
+    -fx-border-color: transparent;
+}
+
+.toolbar-tab:selected {
+    -fx-border-color: white;
+}
+
+.toolbar-fab {
+    -fx-background-color: -swatch-accent;
+    -fx-padding: 15;
+    -fx-background-radius: 5em;
+}
+
+.dialog {
+    -fx-background-color: #F2F2F2;
+    -fx-background-radius: 5;
+    -fx-effect: dropshadow(three-pass-box, rgba(20, 20, 20, 0.8), 15, 0, 0,
+    5);
+}
